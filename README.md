@@ -1,26 +1,26 @@
 <p align="center">
-    <a href="https://github.com/terabytesoftw/app-user" target="_blank">
+    <a href="https://github.com/terabytesoftw/asset-bootbox" target="_blank">
             <img src="https://lh3.googleusercontent.com/D9TFw1F6ddPuheDc_tpNptTdvTg-FNNpjLSBN14X6Sc-3JDiOxfE67rEh4OZfygonx1tKei2b2DEOHDLjF6T3xl8e-rkEEPZeGqLTWcS_v2cBRlyo0vcZLDHG5ivSDGIWCsenbol=w2400" height="50px;">
     </a>
     <h1 align="center">Asset BootBox</h1>
 </p>
 <p align="center">
-    <a href="https://packagist.org/packages/terabytesoft/asset-bootbox" target="_blank">
-        <img src="https://poser.pugx.org/terabytesoft/asset-bootbox/v/unstable" alt="Unstable Version">
+    <a href="https://packagist.org/packages/terabytesoftw/asset-bootbox" target="_blank">
+        <img src="https://poser.pugx.org/terabytesoftw/asset-bootbox/v/unstable" alt="Unstable Version">
     </a>
-    <a href="https://travis-ci.org/terabytesoft/asset-bootbox" target="_blank">
-        <img src="https://travis-ci.org/terabytesoft/asset-bootbox.svg?branch=master" alt="Build Status">
+    <a href="https://travis-ci.org/terabytesoftw/asset-bootbox" target="_blank">
+        <img src="https://travis-ci.org/terabytesoftw/asset-bootbox.svg?branch=master" alt="Build Status">
     </a>
-    <a href="https://scrutinizer-ci.com/g/terabytesoft/asset-bootbox/" target="_blank">
-        <img src="https://scrutinizer-ci.com/g/terabytesoft/asset-bootbox/badges/build.png?b=master" alt="Build Status">
+    <a href="https://scrutinizer-ci.com/g/terabytesoftw/asset-bootbox/" target="_blank">
+        <img src="https://scrutinizer-ci.com/g/terabytesoftw/asset-bootbox/badges/build.png?b=master" alt="Build Status">
     </a>
-    <a href="https://scrutinizer-ci.com/g/terabytesoft/asset-bootbox/?branch=master" target="_blank">
-         <img src="https://scrutinizer-ci.com/g/terabytesoft/asset-bootbox/badges/quality-score.png?b=master" alt="Code Quality">
+    <a href="https://scrutinizer-ci.com/g/terabytesoftw/asset-bootbox/?branch=master" target="_blank">
+         <img src="https://scrutinizer-ci.com/g/terabytesoftw/asset-bootbox/badges/quality-score.png?b=master" alt="Code Quality">
     </a>
     <a href="https://scrutinizer-ci.com/code-intelligence" target="_blank">
-         <img src="https://scrutinizer-ci.com/g/terabytesoft/asset-bootbox/badges/code-intelligence.svg?b=master" alt="Code Intelligence Status">
+         <img src="https://scrutinizer-ci.com/g/terabytesoftw/asset-bootbox/badges/code-intelligence.svg?b=master" alt="Code Intelligence Status">
     </a>
-    <a href="https://codeclimate.com/github/terabytesoft/asset-bootbox/maintainability" target="_blank">
+    <a href="https://codeclimate.com/github/terabytesoftw/asset-bootbox/maintainability" target="_blank">
         <img src="https://api.codeclimate.com/v1/badges/1da0f2c92423f3603ee2/maintainability" alt="Maintainability">
     </a>
     <a href="https://github.styleci.io/repos/187356337">
@@ -65,7 +65,7 @@ composer require terabytesoftw/asset-bootbox '^1.0@dev'
 or add composer.json:
 
 ~~~
-"terabytesoft/asset-bootbox":"^1.0@dev"
+"terabytesoftw/asset-bootbox":"^1.0@dev"
 ~~~
 
 ### **USAGE:**
@@ -75,7 +75,7 @@ or add composer.json:
 
 \terabytesoft\assets\BootBoxAsset::register($this);
 
-echo Yiisoft\Yii\Bootstrap4\Html::a(
+echo yii\helpers\Html::a(
     'Delete',
     '#',
     [
@@ -91,7 +91,7 @@ echo Yiisoft\Yii\Bootstrap4\Html::a(
 ### **RUN TESTS CODECEPTION:**
 
 ~~~
-$ cd vendor/terabytesoft/asset-bootbox
+$ cd vendor/terabytesoftw/asset-bootbox
 $ composer update --prefer-dist -vvv
 $ vendor/bin/codecept run
 ~~~
@@ -107,6 +107,7 @@ $ vendor/bin/codecept run
 [Style CI Documentation PSR2.](https://docs.styleci.io/presets#psr2)
 
 ### **LICENCE:**
-[![License](https://poser.pugx.org/terabytesoft/asset-bootbox/license)](LICENSE.md)
+[![License](https://poser.pugx.org/terabytesoftw/asset-bootbox/license)](LICENSE.md)
 [![YiiFramework](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](https://www.yiiframework.com/)
-[![Total Downloads](https://poser.pugx.org/terabytesoft/asset-bootbox/downloads)](https://packagist.org/packages/terabytesoft/asset-bootbox)
+[![Total Downloads](https://poser.pugx.org/terabytesoftw/asset-bootbox/downloads)](https://packagist.org/packages/terabytesoftw/asset-bootbox)
+[![StyleCI](https://github.styleci.io/repos/193722479/shield?branch=master)](https://github.styleci.io/repos/193722479)
