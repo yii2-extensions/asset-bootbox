@@ -23,6 +23,6 @@ coverage:
     enabled: true
     whitelist:
         include:
-            - src/assets
+            - src/*
         exclude:
-            - src/assets/js/*
+            - src/js/*

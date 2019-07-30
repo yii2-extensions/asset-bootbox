@@ -19,19 +19,39 @@ use yii\web\AssetBundle;
  */
 class BootBoxAsset extends AssetBundle
 {
-    public $sourcePath = '@npm/bootbox/src';
+    /**
+     * @var array $depends
+     */
+    public $depends = [
+        \terabytesoft\assets\YiiBootBoxAsset::class,
+    ];
 
+    /**
+     * @var array $js
+     */
     public $js = [
         'bootbox.js',
     ];
 
+    /**
+     * @var array $publishOptions
+     */
     public $publishOptions = [
         'only' => [
             'bootbox.js',
         ],
     ];
 
-    public $depends = [
-        \terabytesoft\assets\YiiBootBoxAsset::class,
-    ];
+    /**
+     * @var string $sourcePath
+     */
+    public $sourcePath = '@npm/bootbox/src';
+
+    /**
+     * init
+     */
+    public function init(): void
+    {
+        parent::init();
+    }
 }

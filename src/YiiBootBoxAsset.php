@@ -19,21 +19,41 @@ use yii\web\AssetBundle;
  **/
 class YiiBootBoxAsset extends AssetBundle
 {
-    public $sourcePath = __DIR__ . '/js';
+    /**
+     * @var array $depends
+     */
+    public $depends = [
+        \yii\web\YiiAsset::class,
+        \yii\bootstrap4\BootstrapAsset::class,
+        \yii\bootstrap4\BootstrapPluginAsset::class,
+    ];
 
+    /**
+     * @var array $js
+     */
     public $js = [
         'YiiBootBox.js',
     ];
 
+    /**
+     * @var array $publishOptions
+     */
     public $publishOptions = [
         'only' => [
             'YiiBootBox.js',
         ],
     ];
 
-    public $depends = [
-        \yii\web\YiiAsset::class,
-        \yii\bootstrap4\BootstrapAsset::class,
-        \yii\bootstrap4\BootstrapPluginAsset::class,
-    ];
+    /**
+     * @var string $sourcePath
+     */
+    public $sourcePath = __DIR__ . '/js';
+
+    /**
+     * init
+     */
+    public function init(): void
+    {
+        parent::init();
+    }
 }
