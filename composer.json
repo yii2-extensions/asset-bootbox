@@ -1,5 +1,5 @@
 {
-    "name": "terabytesoftw/github-template",
+    "name": "terabytesoftw/asset-bootbox",
     "type": "yii2-extension",
     "description": "Template giyhub yii2",
     "keywords": [
@@ -7,7 +7,7 @@
         "template",
         "yii"
     ],
-    "homepage": "https://github.com/terabytesoftw/github-template",
+    "homepage": "https://github.com/terabytesoftw/asset-bootbox",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -18,16 +18,15 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=5.4.0",
+        "php": "^7.2.0",
         "oomphinc/composer-installers-extender": "^1.1",
         "yiisoft/yii2": "^2.0.20",
-        "yiisoft/yii2-bootstrap4": "^2.0.3"
+        "yiisoft/yii2-bootstrap4": "^2.0.3",
+        "npm-asset/bootbox": "@dev"
     },
     "require-dev": {
         "codeception/codeception": "^3.0",
         "codeception/c3": "2.*",
-        "codeception/specify": "*",
-        "codeception/verify": "*",
         "dms/phpunit-arraysubset-asserts": "^0.1.0",
         "hiqdev/composer-config-plugin": "^1.0@dev",
         "monolog/monolog": "*",
@@ -36,10 +35,10 @@
         "yiisoft/yii2-faker": "~2.0.0"
     },
     "autoload": {
-        "psr-4": {"terabytesoft\\template\\github\\": "src/"}
+        "psr-4": {"terabytesoft\\assets\\": "src/"}
     },
     "autoload-dev": {
-        "psr-4": {"terabytesoft\\template\\github\\tests\\": "tests/"}
+        "psr-4": {"terabytesoft\\assets\\tests\\": "tests/"}
 	},
     "config": {
         "process-timeout": 1800,
