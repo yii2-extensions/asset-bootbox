@@ -37,7 +37,6 @@ class BootBoxCest
      */
     public function bootBoxSimpleDependency(UnitTester $I): void
     {
-
         \PHPUnit_Framework_Assert::assertEmpty($this->view->assetBundles);
 
         BootBoxAsset::register($this->view);
