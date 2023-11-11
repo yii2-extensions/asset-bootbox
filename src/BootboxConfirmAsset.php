@@ -5,19 +5,20 @@ declare(strict_types=1);
 namespace yii\assets;
 
 use yii\web\AssetBundle;
+use yii\web\YiiAsset;
 
-final class BootboxAsset extends AssetBundle
+final class BootboxConfirmAsset extends AssetBundle
 {
     /**
      * @inheritDoc
      */
-    public $sourcePath = '@npm/bootbox/dist';
+    public $sourcePath = __DIR__ . '/js';
 
     /**
      * @inheritDoc
      */
     public $js = [
-        'bootbox.js',
+        'bootbox-confirm.js',
     ];
 
     /**
@@ -25,7 +26,7 @@ final class BootboxAsset extends AssetBundle
      */
     public $publishOptions = [
         'only' => [
-            'bootbox.js',
+            'bootbox-confirm.js',
         ],
     ];
 
@@ -33,6 +34,6 @@ final class BootboxAsset extends AssetBundle
      * @inheritDoc
      */
     public $depends = [
-        BootboxConfirmAsset::class,
+        YiiAsset::class,
     ];
 }
