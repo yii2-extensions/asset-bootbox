@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "yii\\assets\\": "src"
+            "yii\\bootbox\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "yii\\extensions\\assets\\tests\\": "tests"
+            "yii\\extensions\\bootbox\\tests\\": "tests"
         }
 	},
     "config": {

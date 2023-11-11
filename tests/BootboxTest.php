@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace yii\extensions\assets\tests;
+namespace yii\extensions\bootbox\tests;
 
 use Yii;
-use yii\assets\BootboxAsset;
-use yii\assets\BootboxConfirmAsset;
+use yii\bootbox\BootboxAsset;
+use yii\bootbox\BootboxConfirmAsset;
 use yii\web\AssetBundle;
 use yii\web\JqueryAsset;
 use yii\web\View;
