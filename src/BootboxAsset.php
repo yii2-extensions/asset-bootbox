@@ -6,7 +6,7 @@ namespace yii\assets;
 
 use yii\web\AssetBundle;
 
-final class BootBoxAsset extends AssetBundle
+final class BootboxAsset extends AssetBundle
 {
     /**
      * @inheritDoc
