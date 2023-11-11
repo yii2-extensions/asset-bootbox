@@ -20,14 +20,12 @@ final class BootboxTest extends TestCase
 
         $this->assertEmpty($view->assetBundles);
 
-        BootboxAsset::register($view);
+        BootboxConfirmAsset::register($view);
 
         $this->assertCount(4, $view->assetBundles);
         $this->assertArrayHasKey(BootboxAsset::class, $view->assetBundles);
-        $this->assertArrayHasKey(BootboxConfirmAsset::class, $view->assetBundles);
         $this->assertArrayHasKey(YiiAsset::class, $view->assetBundles);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootboxAsset::class]);
-        $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootboxConfirmAsset::class]);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[JqueryAsset::class]);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[YiiAsset::class]);
     }
@@ -47,11 +45,10 @@ final class BootboxTest extends TestCase
 
         $this->assertEmpty($view->assetBundles);
 
-        BootboxAsset::register($view);
+        BootboxConfirmAsset::register($view);
 
         $this->assertCount(4, $view->assetBundles);
         $this->assertArrayHasKey(BootboxAsset::class, $view->assetBundles);
-        $this->assertArrayHasKey(BootboxConfirmAsset::class, $view->assetBundles);
         $this->assertArrayHasKey(YiiAsset::class, $view->assetBundles);
 
         $result = $view->renderFile(__DIR__ . '/support/main.php');

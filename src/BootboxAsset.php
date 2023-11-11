@@ -30,13 +30,6 @@ final class BootboxAsset extends AssetBundle
         ],
     ];
 
-    /**
-     * @inheritDoc
-     */
-    public $depends = [
-        BootboxConfirmAsset::class,
-    ];
-
     public function init(): void
     {
         parent::init();
