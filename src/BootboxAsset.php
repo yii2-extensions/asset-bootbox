@@ -26,6 +26,7 @@ final class BootboxAsset extends AssetBundle
     public $publishOptions = [
         'only' => [
             'bootbox.js',
+            'bootbox.min.js',
         ],
     ];
 
@@ -35,4 +36,11 @@ final class BootboxAsset extends AssetBundle
     public $depends = [
         BootboxConfirmAsset::class,
     ];
+
+    public function init(): void
+    {
+        parent::init();
+
+        $this->js[] = YII_DEBUG ? 'bootbox.js' : 'bootbox.min.js';
+    }
 }

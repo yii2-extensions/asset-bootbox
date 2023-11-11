@@ -59,7 +59,7 @@ final class BootboxTest extends TestCase
         $this->assertMatchesRegularExpression('/jquery.js/', $result);
         $this->assertMatchesRegularExpression('/yii.js/', $result);
         $this->assertMatchesRegularExpression('/bootbox-confirm.js/', $result);
-        $this->assertMatchesRegularExpression('/bootbox.js/', $result);
+        $this->assertMatchesRegularExpression('/bootbox.min.js/', $result);
     }
 
     private function sourcesPublishVerifyFiles(string $type, object $bundle): void

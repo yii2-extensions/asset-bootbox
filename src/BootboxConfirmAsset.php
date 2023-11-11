@@ -36,4 +36,9 @@ final class BootboxConfirmAsset extends AssetBundle
     public $depends = [
         YiiAsset::class,
     ];
+
+    public function init(): void
+    {
+        parent::init();
+    }
 }
