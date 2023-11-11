@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-$autoload = dirname(__dir__) . '/vendor/autoload.php';
-$yii2 = dirname(__dir__) . '/vendor/yiisoft/yii2/Yii.php';
+$autoload = dirname(__DIR__) . '/vendor/autoload.php';
+$yii2 = dirname(__DIR__) . '/vendor/yiisoft/yii2/Yii.php';
 
 if (!is_file($autoload)) {
     die('You need to set up the project dependencies using Composer');

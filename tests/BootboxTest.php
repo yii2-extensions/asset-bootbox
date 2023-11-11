@@ -37,7 +37,7 @@ final class BootboxTest extends TestCase
         $view = new View();
         $bundle = BootboxAsset::register($view);
 
-        $this->assertTrue(is_dir($bundle->basePath));
+        $this->assertDirectoryExists($bundle->basePath);
         $this->sourcesPublishVerifyFiles('js', $bundle);
     }
 
@@ -71,6 +71,6 @@ final class BootboxTest extends TestCase
             $this->assertFileEquals($publishedFile, $sourceFile);
         }
 
-        $this->assertTrue(is_dir($bundle->basePath));
+        $this->assertDirectoryExists($bundle->basePath);
     }
 }
