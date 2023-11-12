@@ -2,8 +2,10 @@
 
 declare(strict_types=1);
 
-namespace yii\assets;
+namespace yii\bootbox;
 
+use yii\bootstrap5\BootstrapAsset;
+use yii\bootstrap5\BootstrapPluginAsset;
 use yii\web\AssetBundle;
 use yii\web\YiiAsset;
 
@@ -34,6 +36,8 @@ final class BootboxConfirmAsset extends AssetBundle
      * @inheritDoc
      */
     public $depends = [
+        BootstrapAsset::class,
+        BootstrapPluginAsset::class,
         YiiAsset::class,
     ];
 
