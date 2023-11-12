@@ -16,18 +16,18 @@ final class BootboxAsset extends AssetBundle
     /**
      * @inheritDoc
      */
-    public $js = [
-        'bootbox.js',
-    ];
-
-    /**
-     * @inheritDoc
-     */
     public $publishOptions = [
         'only' => [
             'bootbox.js',
             'bootbox.min.js',
         ],
+    ];
+
+    /**
+     * @inheritDoc
+     */
+    public $depends = [
+        BootboxConfirmAsset::class,
     ];
 
     public function init(): void

@@ -7,6 +7,8 @@ namespace yii\extensions\bootbox\tests;
 use Yii;
 use yii\bootbox\BootboxAsset;
 use yii\bootbox\BootboxConfirmAsset;
+use yii\bootstrap5\BootstrapAsset;
+use yii\bootstrap5\BootstrapPluginAsset;
 use yii\web\AssetBundle;
 use yii\web\JqueryAsset;
 use yii\web\View;
@@ -20,12 +22,15 @@ final class BootboxTest extends TestCase
 
         $this->assertEmpty($view->assetBundles);
 
-        BootboxConfirmAsset::register($view);
+        BootboxAsset::register($view);
 
-        $this->assertCount(4, $view->assetBundles);
-        $this->assertArrayHasKey(BootboxAsset::class, $view->assetBundles);
-        $this->assertArrayHasKey(YiiAsset::class, $view->assetBundles);
+
+        $this->assertCount(6, $view->assetBundles);
+        $this->assertArrayHasKey(BootboxConfirmAsset::class, $view->assetBundles);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootboxAsset::class]);
+        $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootboxConfirmAsset::class]);
+        $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootstrapAsset::class]);
+        $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootstrapPluginAsset::class]);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[JqueryAsset::class]);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[YiiAsset::class]);
     }
@@ -45,11 +50,15 @@ final class BootboxTest extends TestCase
 
         $this->assertEmpty($view->assetBundles);
 
-        BootboxConfirmAsset::register($view);
+        BootboxAsset::register($view);
 
-        $this->assertCount(4, $view->assetBundles);
-        $this->assertArrayHasKey(BootboxAsset::class, $view->assetBundles);
-        $this->assertArrayHasKey(YiiAsset::class, $view->assetBundles);
+        $this->assertCount(6, $view->assetBundles);
+        $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootboxAsset::class]);
+        $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootboxConfirmAsset::class]);
+        $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootstrapAsset::class]);
+        $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootstrapPluginAsset::class]);
+        $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[JqueryAsset::class]);
+        $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[YiiAsset::class]);
 
         $result = $view->renderFile(__DIR__ . '/support/main.php');
 

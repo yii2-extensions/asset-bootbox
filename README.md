@@ -55,7 +55,7 @@ to the require-dev section of your `composer.json` file.
 
 declare(strict_types=1);
 
-use yii\assets\BootboxAsset;
+use yii\bootbox\BootboxAsset;
 use yii\helpers\Html;
 
 BootboxAsset::register($this);

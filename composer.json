@@ -12,8 +12,9 @@
     "require": {
         "php": "^8.1",
         "oomphinc/composer-installers-extender": "^2.0",
-        "yiisoft/yii2": "^2.2",
-        "npm-asset/bootbox": "^6.0"
+        "npm-asset/bootbox": "^6.0",
+        "yii2-extensions/bootstrap5": "dev-main",
+        "yiisoft/yii2": "^2.2"
     },
     "require-dev": {
         "maglnet/composer-require-checker": "^4.6",
