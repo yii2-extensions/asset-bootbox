@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://github.com/yii2-extensions/asset-bootbox" target="_blank">
+    <a href="https://github.com/yii2-extensions/bootbox" target="_blank">
         <img src="https://www.yiiframework.com/image/yii_logo_light.svg" height="100px;">
     </a>
     <h1 align="center">Bootbox.</h1>
@@ -13,16 +13,16 @@
     <a href="https://github.com/yiisoft/yii2/tree/2.2" target="_blank">
         <img src="https://img.shields.io/badge/Yii2%20version-2.2-blue" alt="yii2-version">
     </a>
-    <a href="https://github.com/yii2-extensions/asset-bootbox/actions/workflows/build.yml" target="_blank">
-        <img src="https://github.com/yii2-extensions/asset-bootbox/actions/workflows/build.yml/badge.svg" alt="PHPUnit">
+    <a href="https://github.com/yii2-extensions/bootbox/actions/workflows/build.yml" target="_blank">
+        <img src="https://github.com/yii2-extensions/bootbox/actions/workflows/build.yml/badge.svg" alt="PHPUnit">
     </a>
-    <a href="https://codecov.io/gh/yii2-extensions/asset-bootbox" target="_blank">
-        <img src="https://codecov.io/gh/yii2-extensions/asset-bootbox/branch/main/graph/badge.svg?token=MF0XUGVLYC" alt="Codecov">
+    <a href="https://codecov.io/gh/yii2-extensions/bootbox" target="_blank">
+        <img src="https://codecov.io/gh/yii2-extensions/bootbox/branch/main/graph/badge.svg?token=MF0XUGVLYC" alt="Codecov">
     </a>
-    <a href="https://github.com/yii2-extensions/asset-bootbox/actions/workflows/static.yml" target="_blank">
-        <img src="https://github.com/yii2-extensions/asset-bootbox/actions/workflows/static.yml/badge.svg" alt="PHPStan">
+    <a href="https://github.com/yii2-extensions/bootbox/actions/workflows/static.yml" target="_blank">
+        <img src="https://github.com/yii2-extensions/bootbox/actions/workflows/static.yml/badge.svg" alt="PHPStan">
     </a>
-    <a href="https://github.com/yii2-extensions/asset-bootbox/actions/workflows/static.yml" target="_blank">
+    <a href="https://github.com/yii2-extensions/bootbox/actions/workflows/static.yml" target="_blank">
         <img src="https://img.shields.io/badge/PHPStan%20level-5-blue" alt="PHPStan level">
     </a>
     <a href="https://github.styleci.io/repos/193722479?branch=main" target="_blank">
@@ -37,13 +37,13 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```
-composer require --dev --prefer-dist yii2-extensions/asset-bootbox
+composer require --dev --prefer-dist yii2-extensions/bootbox
 ```
 
 or add
 
 ```
-"yii2-extensions/asset-bootbox": "dev-main"
+"yii2-extensions/bootbox": "dev-main"
 ```
 
 to the require-dev section of your `composer.json` file.    

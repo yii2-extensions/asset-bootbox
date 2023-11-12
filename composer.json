@@ -1,5 +1,5 @@
 {
-    "name": "yii2-extensions/asset-bootbox",
+    "name": "yii2-extensions/bootbox",
     "type": "yii2-extension",
     "description": "BootBox for Yii Framework.",
     "keywords": [
