@@ -37,13 +37,13 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```
-composer require --dev --prefer-dist yii2-extensions/bootbox
+composer require --dev --prefer-dist yii2-extensions/asset-bootbox
 ```
 
 or add
 
 ```
-"yii2-extensions/bootbox": "dev-main"
+"yii2-extensions/asset-bootbox": "dev-main"
 ```
 
 to the require-dev section of your `composer.json` file.    
