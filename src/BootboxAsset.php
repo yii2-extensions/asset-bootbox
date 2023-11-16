@@ -24,10 +24,7 @@ final class BootboxAsset extends AssetBundle
     {
         parent::init();
 
-        $assetBootbox = match (YII_ENV) {
-            'prod' => 'bootbox.min.js',
-            default => 'bootbox.js',
-        };
+        $assetBootbox = YII_ENV === 'prod' ? 'bootbox.min.js' : 'bootbox.js';
 
         $this->js[] = $assetBootbox;
         $this->publishOptions['only'] = [$assetBootbox];

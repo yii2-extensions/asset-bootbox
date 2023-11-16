@@ -29,8 +29,8 @@ final class BootboxConfirmAsset extends AssetBundle
     {
         parent::init();
 
-        $assetBootboxConfirm = match (YII_ENV) {
-            'prod' => 'bootbox-confirm.min.js',
+        $assetBootboxConfirm = match (YII_ENV === 'prod') {
+            true => 'bootbox-confirm.min.js',
             default => 'bootbox-confirm.js',
         };
 
