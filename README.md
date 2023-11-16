@@ -72,6 +72,7 @@ echo Html::a(
     ]
 );
 ```
+
 ## Testing
 
 [Check the documentation testing](/docs/testing.md) to learn about testing.
