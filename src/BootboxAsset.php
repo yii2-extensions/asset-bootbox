@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace yii\bootbox;
+namespace Yii2\Asset;
 
 use yii\web\AssetBundle;
 
@@ -16,16 +16,6 @@ final class BootboxAsset extends AssetBundle
     /**
      * @inheritDoc
      */
-    public $publishOptions = [
-        'only' => [
-            'bootbox.js',
-            'bootbox.min.js',
-        ],
-    ];
-
-    /**
-     * @inheritDoc
-     */
     public $depends = [
         BootboxConfirmAsset::class,
     ];
@@ -34,6 +24,12 @@ final class BootboxAsset extends AssetBundle
     {
         parent::init();
 
-        $this->js[] = YII_DEBUG ? 'bootbox.js' : 'bootbox.min.js';
+        $assetBootbox = match (YII_ENV) {
+            'prod' => 'bootbox.min.js',
+            default => 'bootbox.js',
+        };
+
+        $this->js[] = $assetBootbox;
+        $this->publishOptions['only'] = [$assetBootbox];
     }
 }

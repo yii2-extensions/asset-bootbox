@@ -2,7 +2,7 @@
     <a href="https://github.com/yii2-extensions/bootbox" target="_blank">
         <img src="https://www.yiiframework.com/image/yii_logo_light.svg" height="100px;">
     </a>
-    <h1 align="center">Bootbox.</h1>
+    <h1 align="center">Asset for Bootbox.</h1>
     <br>
 </p>
 
@@ -55,7 +55,7 @@ to the require-dev section of your `composer.json` file.
 
 declare(strict_types=1);
 
-use yii\bootbox\BootboxAsset;
+use Yii2\Asset\BootboxAsset;
 use yii\helpers\Html;
 
 BootboxAsset::register($this);
