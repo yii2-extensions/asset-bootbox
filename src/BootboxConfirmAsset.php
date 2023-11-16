@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace yii\bootbox;
+namespace Yii2\Asset;
 
 use yii\bootstrap5\BootstrapAsset;
 use yii\bootstrap5\BootstrapPluginAsset;
@@ -19,22 +19,6 @@ final class BootboxConfirmAsset extends AssetBundle
     /**
      * @inheritDoc
      */
-    public $js = [
-        'bootbox-confirm.js',
-    ];
-
-    /**
-     * @inheritDoc
-     */
-    public $publishOptions = [
-        'only' => [
-            'bootbox-confirm.js',
-        ],
-    ];
-
-    /**
-     * @inheritDoc
-     */
     public $depends = [
         BootstrapAsset::class,
         BootstrapPluginAsset::class,
@@ -44,5 +28,13 @@ final class BootboxConfirmAsset extends AssetBundle
     public function init(): void
     {
         parent::init();
+
+        $assetBootboxConfirm = match (YII_ENV === 'prod') {
+            true => 'bootbox-confirm.min.js',
+            default => 'bootbox-confirm.js',
+        };
+
+        $this->js[] = $assetBootboxConfirm;
+        $this->publishOptions['only'] = [$assetBootboxConfirm];
     }
 }

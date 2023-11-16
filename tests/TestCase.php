@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace yii\extensions\bootbox\tests;
+namespace Yii2\Asset\Tests;
 
 use Yii;
 use yii\di\Container;

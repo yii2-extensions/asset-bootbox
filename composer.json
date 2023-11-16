@@ -1,7 +1,7 @@
 {
-    "name": "yii2-extensions/bootbox",
-    "type": "yii2-extension",
-    "description": "BootBox for Yii Framework.",
+    "name": "yii2-extensions/asset-bootbox",
+    "type": "library",
+    "description": "Asset BootBox for Yii Framework.",
     "keywords": [
         "yii2",
         "asset",
@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "yii\\bootbox\\": "src"
+            "Yii2\\Asset\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "yii\\extensions\\bootbox\\tests\\": "tests"
+            "Yii2\\Asset\\Tests\\": "tests"
         }
 	},
     "config": {

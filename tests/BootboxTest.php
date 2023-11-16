@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace yii\extensions\bootbox\tests;
+namespace Yii2\Asset\Tests;
 
+use Yii2\Asset\BootboxAsset;
+use Yii2\Asset\BootboxConfirmAsset;
 use Yii;
-use yii\bootbox\BootboxAsset;
-use yii\bootbox\BootboxConfirmAsset;
 use yii\bootstrap5\BootstrapAsset;
 use yii\bootstrap5\BootstrapPluginAsset;
 use yii\web\AssetBundle;
@@ -65,7 +65,7 @@ final class BootboxTest extends TestCase
         $this->assertMatchesRegularExpression('/jquery.js/', $result);
         $this->assertMatchesRegularExpression('/yii.js/', $result);
         $this->assertMatchesRegularExpression('/bootbox-confirm.js/', $result);
-        $this->assertMatchesRegularExpression('/bootbox.min.js/', $result);
+        $this->assertMatchesRegularExpression('/bootbox.js/', $result);
     }
 
     private function sourcesPublishVerifyFiles(string $type, object $bundle): void

@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+define('YII_ENV', 'dev');
+
 $autoload = dirname(__DIR__) . '/vendor/autoload.php';
 $yii2 = dirname(__DIR__) . '/vendor/yiisoft/yii2/Yii.php';
 
