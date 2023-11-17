@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Yii2\Asset;
 
-use yii\bootstrap5\BootstrapAsset;
-use yii\bootstrap5\BootstrapPluginAsset;
 use yii\web\AssetBundle;
 use yii\web\YiiAsset;
 
