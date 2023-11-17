@@ -6,9 +6,9 @@ namespace Yii2\Asset\Tests;
 
 use Yii2\Asset\BootboxAsset;
 use Yii2\Asset\BootboxConfirmAsset;
+use Yii2\Asset\BootstrapAsset;
+use Yii2\Asset\BootstrapPluginAsset;
 use Yii;
-use yii\bootstrap5\BootstrapAsset;
-use yii\bootstrap5\BootstrapPluginAsset;
 use yii\web\AssetBundle;
 use yii\web\JqueryAsset;
 use yii\web\View;
