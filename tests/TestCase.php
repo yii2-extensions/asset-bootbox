@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Yii2\Asset\Tests;
 
+use PHPForge\Support\Assert;
 use Yii;
 use yii\di\Container;
 use yii\web\Application;
@@ -58,5 +59,6 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
     {
         parent::tearDown();
         $this->destroyApplication();
+        Assert::removeFilesFromDirectory(__DIR__ . '/runtime');
     }
 }

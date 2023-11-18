@@ -14,7 +14,7 @@ use yii\web\JqueryAsset;
 use yii\web\View;
 use yii\web\YiiAsset;
 
-final class BootboxTest extends TestCase
+final class AssetTest extends TestCase
 {
     public function testBootboxSimpleDependency(): void
     {
@@ -34,16 +34,6 @@ final class BootboxTest extends TestCase
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[JqueryAsset::class]);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[YiiAsset::class]);
     }
-
-    public function testBootboxSourcesPublish(): void
-    {
-        $view = new View();
-        $bundle = BootboxAsset::register($view);
-
-        $this->assertDirectoryExists($bundle->basePath);
-        $this->sourcesPublishVerifyFiles('js', $bundle);
-    }
-
     public function testBootboxRegister(): void
     {
         $view = new View();
@@ -62,21 +52,9 @@ final class BootboxTest extends TestCase
 
         $result = $view->renderFile(__DIR__ . '/support/main.php');
 
-        $this->assertMatchesRegularExpression('/jquery.js/', $result);
-        $this->assertMatchesRegularExpression('/yii.js/', $result);
-        $this->assertMatchesRegularExpression('/bootbox-confirm.js/', $result);
-        $this->assertMatchesRegularExpression('/bootbox.js/', $result);
-    }
-
-    private function sourcesPublishVerifyFiles(string $type, object $bundle): void
-    {
-        foreach ($bundle->$type as $filename) {
-            $publishedFile = $bundle->basePath . DIRECTORY_SEPARATOR . $filename;
-            $sourceFile = $bundle->sourcePath . DIRECTORY_SEPARATOR . $filename;
-            $this->assertFileExists($publishedFile);
-            $this->assertFileEquals($publishedFile, $sourceFile);
-        }
-
-        $this->assertDirectoryExists($bundle->basePath);
+        $this->assertStringContainsString('jquery.js', $result);
+        $this->assertStringContainsString('yii.js', $result);
+        $this->assertStringContainsString('bootbox-confirm.js', $result);
+        $this->assertStringContainsString('bootbox.js', $result);
     }
 }

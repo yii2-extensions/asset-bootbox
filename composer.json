@@ -18,7 +18,9 @@
     },
     "require-dev": {
         "maglnet/composer-require-checker": "^4.6",
+        "php-forge/support": "dev-main",
         "phpunit/phpunit": "^10.2",
+        "roave/infection-static-analysis-plugin": "^1.32",
         "yii2-extensions/phpstan": "dev-main"
     },
     "autoload": {
@@ -35,7 +37,8 @@
         "allow-plugins": {
             "composer/installers": true,
             "yiisoft/yii2-composer": true,
-            "oomphinc/composer-installers-extender": true
+            "oomphinc/composer-installers-extender": true,
+            "infection/extension-installer": true
         }
     },
     "extra": {
@@ -52,6 +55,12 @@
                 "type:npm-asset"
             ]
         }
+    },
+    "scripts": {
+        "check-dependencies": "composer-require-checker",
+        "mutation": "roave-infection-static-analysis-plugin",
+        "phpstan": "phpstan",
+        "test": "phpunit"
     },
     "repositories": [
         {
