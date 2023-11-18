@@ -8,7 +8,7 @@ parameters:
     dynamicConstantNames:
         - YII_ENV
 
-    level: 5
+    level: 7
 
     paths:
         - src
