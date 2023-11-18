@@ -31,13 +31,13 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
                     '@npm' => '@app/node_modules',
                     '@public' => '@app/public',
                     '@vendor' => '@app/vendor',
-                    '@web' => __DIR__ . '/runtime',
+                    '@web' => __DIR__ . '/Support/runtime',
                 ],
                 'basePath' => dirname(__DIR__),
                 'vendorPath' => dirname(__DIR__) . '/vendor',
                 'components' => [
                     'assetManager' => [
-                        'basePath' => __DIR__ . '/runtime',
+                        'basePath' => __DIR__ . '/Support/runtime',
                     ],
                     'request' => [
                         'cookieValidationKey' => 'wefJDF8sfdsfSDefwqdxj9oq',
@@ -59,6 +59,6 @@ abstract class TestCase extends \PHPUnit\Framework\TestCase
     {
         parent::tearDown();
         $this->destroyApplication();
-        Assert::removeFilesFromDirectory(__DIR__ . '/runtime');
+        Assert::removeFilesFromDirectory(__DIR__ . '/Support/runtime');
     }
 }
