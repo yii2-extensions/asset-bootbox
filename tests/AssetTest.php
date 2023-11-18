@@ -51,7 +51,7 @@ final class AssetTest extends TestCase
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[JqueryAsset::class]);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[YiiAsset::class]);
 
-        $result = $view->renderFile(__DIR__ . '/support/main.php');
+        $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
         $this->assertStringContainsString('jquery.js', $result);
         $this->assertStringContainsString('yii.js', $result);
