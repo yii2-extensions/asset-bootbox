@@ -34,6 +34,7 @@ final class AssetTest extends TestCase
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[JqueryAsset::class]);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[YiiAsset::class]);
     }
+
     public function testBootboxRegister(): void
     {
         $view = new View();
