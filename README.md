@@ -13,6 +13,9 @@
     <a href="https://github.com/yii2-extensions/asset-bootbox/actions/workflows/build.yml" target="_blank">
         <img src="https://github.com/yii2-extensions/asset-bootbox/actions/workflows/build.yml/badge.svg" alt="PHPUnit">
     </a>
+    <a href="https://github.com/yii2-extensions/asset-bootbox/actions/workflows/compatibility.yml" target="_blank">
+        <img src="https://github.com/yii2-extensions/asset-bootbox/actions/workflows/compatibility.yml/badge.svg" alt="PHPUnit">
+    </a>    
     <a href="https://codecov.io/gh/yii2-extensions/asset-bootbox" target="_blank">
         <img src="https://codecov.io/gh/yii2-extensions/asset-bootbox/branch/main/graph/badge.svg?token=MF0XUGVLYC" alt="Codecov">
     </a>
